@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,4 +11,14 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
+    --font-size: calc(13px + 2vw);
+    --font-family: "Manrope";
+    --font-light: 500;
+    --font-bold: 700;
 }
+
+body{
+    font-size: var(--font-size);
+    background-color: var(--light-grayish-blue);
+}
+
