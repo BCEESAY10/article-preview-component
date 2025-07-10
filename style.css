@@ -107,7 +107,7 @@ footer figure figcaption{
     color: var(--light-grayish-blue);
 }
 
-.hide{
+.social.hide{
     display: none;
 }
 .triangle{
@@ -149,7 +149,7 @@ footer figure figcaption{
         display: none;
     }
     .triangle {
-        display: block;
+        /* display: block; */
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
