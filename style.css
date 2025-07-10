@@ -11,8 +11,8 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
-    --font-size: clamp(13px, 2vw, 18px);
-    --font-size-big: calc(13px + 2vw);
+    --font-size: clamp(13px, 2vw, 16px);
+    --font-size-big: calc(13px + 1vw);
     --font-family: "Manrope", sans-serif;
     --font-light: 500;
     --font-bold: 700;
@@ -110,4 +110,19 @@ footer figure figcaption{
 
 .hide{
     display: none;
+}
+
+
+
+@media (min-width: 48em) {
+    main {
+        display: flex;
+        width: 50em;
+    }
+    main .main-img {
+        width: 300px;
+        margin-bottom: 0;
+        height: 300px;
+        border-radius: 10px 0px 0 10px;
+    }
 }
