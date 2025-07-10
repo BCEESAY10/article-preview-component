@@ -12,7 +12,8 @@
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
     --font-size: calc(13px + 2vw);
-    --font-family: "Manrope";
+    --font-size-big: calc(16px + 2vw);
+    --font-family: "Manrope", sans-serif;
     --font-light: 500;
     --font-bold: 700;
 }
@@ -21,15 +22,28 @@ body{
     font-size: var(--font-size);
     background-color: var(--light-grayish-blue);
     padding: 0 1em;
+    color: var(--very-dark-grayish-blue);
 }
 
 main{
     min-width: 9vw;
     margin: 50px auto;
-    background-color: hsl(210, 30%, 90%);
+    background-color: hsl(210, 0%, 95%);
 }
 
 main .main-img{
     width: 100%;
     height: 10em;
+    margin-bottom: 0.5em;
+}
+
+section{
+    padding: 1em;
+}
+
+.para-1{
+    font-size: var(--font-size-big);
+    margin-bottom: 1em;
+    font-weight: var(--font-bold);
+    
 }
