@@ -27,7 +27,7 @@ body{
 
 main{
     min-width: 9vw;
-    margin: 50px auto;
+    margin: 10em auto;
     background-color: hsl(210, 0%, 95%);
     box-shadow: 1px 1px 8px var(--grayish-blue);
     border-radius: 10px;
@@ -84,7 +84,6 @@ footer figure figcaption{
     border: 1px solid var(--grayish-blue);
     padding: .4em;
     border-radius: 50%;
-    z-index: 10;
 }
 .social{
     display: flex;
@@ -124,5 +123,26 @@ footer figure figcaption{
         margin-bottom: 0;
         height: 300px;
         border-radius: 10px 0px 0 10px;
+    }
+    .share:hover {
+        background-color: var(--very-dark-grayish-blue);
+        cursor: pointer;
+    }
+    .social {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1em;
+        padding: 12px 32px;
+        height: 40px;
+        background-color: var(--very-dark-grayish-blue);
+        position: absolute;
+        bottom: 25%;
+        left: 80%;
+        border-radius: 10px;
+    }
+    .social img.share{
+        display: none;
     }
 }
