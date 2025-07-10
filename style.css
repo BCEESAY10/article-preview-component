@@ -11,8 +11,8 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
-    --font-size: calc(13px + 2vw);
-    --font-size-big: calc(16px + 2vw);
+    --font-size: clamp(13px, 2vw, 18px);
+    --font-size-big: calc(13px + 2vw);
     --font-family: "Manrope", sans-serif;
     --font-light: 500;
     --font-bold: 700;
@@ -29,16 +29,18 @@ main{
     min-width: 9vw;
     margin: 50px auto;
     background-color: hsl(210, 0%, 95%);
+    box-shadow: 1px 1px 8px var(--grayish-blue);
+    border-radius: 10px;
 }
 
 main .main-img{
     width: 100%;
-    height: 10em;
+    height: 200px;
     margin-bottom: 0.5em;
 }
 
 section{
-    padding: 1em;
+    padding: 1.5em 2.5em;
 }
 
 .para-1{
@@ -46,4 +48,41 @@ section{
     margin-bottom: 1em;
     font-weight: var(--font-bold);
     
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+    height: 50px;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer figure img{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+}
+
+footer figure figcaption{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+#share{
+    background-color: var(--light-grayish-blue);
+    border: 1px solid var(--grayish-blue);
+    padding: .4em;
+    border-radius: 50%;
+}
+
+.hide{
+    display: none;
 }
