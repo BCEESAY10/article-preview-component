@@ -110,6 +110,9 @@ footer figure figcaption{
 .hide{
     display: none;
 }
+.triangle{
+    display: none;
+}
 
 
 
@@ -138,11 +141,20 @@ footer figure figcaption{
         height: 40px;
         background-color: var(--very-dark-grayish-blue);
         position: absolute;
-        bottom: 25%;
+        bottom: 30%;
         left: 80%;
         border-radius: 10px;
     }
     .social img.share{
         display: none;
+    }
+    .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid var(--very-dark-grayish-blue);
+        transform: translate(-84px, 25px);
     }
 }
