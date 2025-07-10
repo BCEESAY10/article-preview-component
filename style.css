@@ -79,7 +79,7 @@ footer figure figcaption{
     font-size: 13px;
 }
 
-#share{
+.share{
     background-color: var(--light-grayish-blue);
     border: 1px solid var(--grayish-blue);
     padding: .4em;
@@ -89,18 +89,23 @@ footer figure figcaption{
 .social{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: space-between;
     margin-top: 1em;
     padding: 12px 32px;
     height: 60px;
     background-color: var(--very-dark-grayish-blue);
-    color: var(--light-grayish-blue);
-    text-transform: uppercase;
     position: absolute;
     width: 100%;
     bottom: 0;
     border-radius: 0 0 10px 10px;
+}
+.social .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    text-transform: uppercase;
+    color: var(--light-grayish-blue);
 }
 
 .hide{
