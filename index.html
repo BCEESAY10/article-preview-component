@@ -12,44 +12,68 @@
 </head>
 <body>
 
-  <main>
-    <img class="main-img" src="images/drawers.jpg" alt="Main image">
-    <section>
-      <article>
-        <p class="para-1">
-          Shift the overall look and feel by adding these wonderful
-          touches to furniture in your home
-        </p>
-        <p class="para-2">
-          Ever been in a room and felt like something was missing? Perhaps
-          it felt slightly bare and uninviting. I’ve got some simple tips
-          to help you make any room feel complete.
-        </p>
-      </article>
-      <footer>
-        <figure class="profile">
-          <img src="images/avatar-michelle.jpg" alt="Profile image">
-          <figcaption>
-            <strong>Michelle Appleton</strong>
-            <time datetime="2020-01-28">28 Jun 2020</time>
-          </figcaption>
-        </figure>
-        <div>
-          <img class="share" id="share" src="images/icon-share.svg" alt="Share icons">
+  <div class="article-card">
+    <div class="article-image">
+      <img src="images/drawers.jpg" alt="Main Image">
+    </div>
+  
+    <div class="article-content">
+      <h1 class="article-title">
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </h1>
+  
+      <p class="article-text">
+        Ever been in a room and felt like something was missing? Perhaps it felt
+        slightly bare and uninviting. I've got some simple tips to help you make
+        any room feel complete.
+      </p>
+  
+      <div class="article-footer">
+        <div class="author-info">
+          <img src="" alt="Author Image">
+          <div class="author-details">
+            <h4>Michelle Appleton</h4>
+            <p>28 Jun 2020</p>
+          </div>
         </div>
-      </footer>
-    </section>
-    <footer class="social hide">
-      <div class="left">
-        <p class="share-text">Share</p>
-        <img src="images/icon-facebook.svg" alt="Facebook">
-        <img src="images/icon-twitter.svg" alt="Twitter">
-        <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+  
+        <button class="share-btn" id="shareBtn">
+          <svg viewBox="0 0 15 13">
+            <path d="m15 6.495-6.807-6.405L6.407 1.824 10.982 6.13H0v1.73h10.982L6.407 12.17l1.786 1.734L15 7.495v-1Z" />
+          </svg>
+        </button>
+  
+        <!-- Desktop Share Popup -->
+        <div class="share-popup" id="sharePopup">
+          <span class="share-text">Share</span>
+          <div class="social-icons">
+            <div class="social-icon">[Facebook Icon]</div>
+            <div class="social-icon">[Twitter Icon]</div>
+            <div class="social-icon">[Pinterest Icon]</div>
+          </div>
+        </div>
+  
+        <!-- Mobile Share Overlay -->
+        <div class="share-overlay" id="shareOverlay">
+          <div class="social-section">
+            <span class="share-text">Share</span>
+            <div class="social-icons">
+              <div class="social-icon">[Facebook Icon]</div>
+              <div class="social-icon">[Twitter Icon]</div>
+              <div class="social-icon">[Pinterest Icon]</div>
+            </div>
+          </div>
+          <button class="share-btn">
+            <svg viewBox="0 0 15 13">
+              <path
+                d="m15 6.495-6.807-6.405L6.407 1.824 10.982 6.13H0v1.73h10.982L6.407 12.17l1.786 1.734L15 7.495v-1Z" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <img class="share" src="images/icon-share.svg" alt="Share icons">
-      <div class="triangle hide"></div>
-    </footer>
-  </main>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
