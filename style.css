@@ -28,12 +28,6 @@ body {
 .article-image img{
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, #48cc6c, #16a085);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 14px;
     position: relative;
 }
 
@@ -43,25 +37,6 @@ body {
     inset: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
-}
-
-.article-image-placeholder {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.furniture-placeholder {
-    width: 120px;
-    height: 80px;
-    background: #2c7a7b;
-    border-radius: 8px;
-    margin: 0 auto 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .article-content {
@@ -96,11 +71,10 @@ body {
     gap: 16px;
 }
 
-.author-avatar {
+.author-info img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f093fb, #f5576c);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +95,7 @@ body {
     color: hsl(212, 23%, 69%);
 }
 
-.share-btn {
+.share-btn{
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -145,7 +119,7 @@ body {
     color: white;
 }
 
-.share-btn svg {
+.share-btn img {
     width: 15px;
     height: 15px;
     fill: currentColor;
@@ -230,7 +204,7 @@ body {
     gap: 16px;
 }
 
-.share-overlay .share-btn {
+.share-overlay .share-btn img{
     background: hsl(214, 17%, 51%);
 }
 
@@ -244,6 +218,7 @@ body {
 
     .article-image img{
         flex: 0 0 285px;
+        width: 285px;
         height: 100%;
     }
 
