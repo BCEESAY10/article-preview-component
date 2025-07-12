@@ -127,9 +127,9 @@ body {
 }
 
 .share-popup {
-    position: fixed;
-    bottom: 108px;
-    left: 50%;
+    position: absolute;
+    bottom: 20em;
+    right: 13em;
     transform: translateX(-50%);
     background: hsl(217, 19%, 35%);
     border-radius: 10px;
