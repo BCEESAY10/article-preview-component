@@ -267,3 +267,19 @@ body {
         display: none !important;
     }
 }
+
+/* Tablet Styles for the share popup */
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .share-popup {
+        bottom: 28em;
+        right: -8em;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .share-popup {
+        bottom: 30em;
+        right: -6em;
+    }
+}
