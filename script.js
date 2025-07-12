@@ -8,9 +8,16 @@ shareBtn.addEventListener("click", function () {
   shareBtn.classList.toggle("active");
 
   // Check if we're on mobile or desktop
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 767 && shareBtn.classList.contains("active")) {
     // Mobile: toggle overlay
     shareOverlay.classList.toggle("active");
+    shareBtn.classList.remove("active");
+    // Hide shareBtn when overlay is active
+    if (shareOverlay.classList.contains("active")) {
+      shareBtn.classList.add("hidden");
+    } else {
+      shareBtn.classList.remove("hidden");
+    }
   } else {
     // Desktop: toggle popup
     sharePopup.classList.toggle("active");
@@ -23,6 +30,7 @@ document.addEventListener("click", function (e) {
     shareBtn.classList.remove("active");
     sharePopup.classList.remove("active");
     shareOverlay.classList.remove("active");
+    shareBtn.classList.remove("hidden");
   }
 });
 
@@ -31,4 +39,5 @@ window.addEventListener("resize", function () {
   shareBtn.classList.remove("active");
   sharePopup.classList.remove("active");
   shareOverlay.classList.remove("active");
+  shareBtn.classList.remove("hidden");
 });
